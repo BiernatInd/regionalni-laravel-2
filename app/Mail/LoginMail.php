@@ -19,6 +19,6 @@ class LoginMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Login attempt')->view('emails.login-email');
+        return $this->subject('Próba logowania')->view('emails.login-email');
     }
 }

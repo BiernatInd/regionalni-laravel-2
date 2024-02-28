@@ -31,7 +31,7 @@ class ContactFormMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('New message from website:')
+        return $this->subject('Nowa wiadomość ze strony internetowej:')
         ->view('emails.contact-form');
     }
 }
