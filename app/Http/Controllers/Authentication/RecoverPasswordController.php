@@ -42,7 +42,7 @@ class RecoverPasswordController extends Controller
 
         $resetLink = "/resetowanie-hasla/{$token}";
 
-        Mail::to($request->email)->send(new ResetPasswordEmail('http://localhost:3000/resetowanie-hasla/' . $token));
+        Mail::to($request->email)->send(new ResetPasswordEmail('http://regionalnisandomierz.com.pl/resetowanie-hasla/' . $token));
 
         return response()->json(['message' => 'E-mail z linkiem do resetowania hasła został wysłany', 'resetLink' => $resetLink]);
     }

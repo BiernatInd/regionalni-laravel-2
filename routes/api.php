@@ -50,3 +50,5 @@ Route::post('/admin-change-password/{user_name}', 'App\Http\Controllers\AdminPan
 Route::post('/admin-change-email/{user_name}', 'App\Http\Controllers\AdminPanel\Settings\SettingsController@adminChangeEmail');
 
 Route::get('/download-statut', 'App\Http\Controllers\Documents\DocumentsController@downloadStatut');
+
+Route::post('/send-form', 'App\Http\Controllers\Contact\ContactController@sendForm');

@@ -42,7 +42,7 @@ class LoginController extends Controller
             'status' => 'Failed login attempt'
         ];
 
-        Mail::to('biuro.szambonalata@gmail.com')->send(new LoginMail($loginDetails));
+        Mail::to('regionalnisandomierz@op.pl')->send(new LoginMail($loginDetails));
     
         return response()->json(['message' => 'Invalid login'], 401);
     }
